@@ -15,5 +15,8 @@ connectDB();
 
 app.use('/api/auth', authRoutes);
 app.use('/api/cards', cardRoutes);
+app.use('/test',(req,res)=>{
+    res.json("success")
+})
 
 module.exports = app;
